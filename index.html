@@ -19,7 +19,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/swiper@9.4.0/swiper-bundle.min.css" rel="stylesheet" />
-  
+
   <!-- CSS Main -->
   <link rel="stylesheet" href="css/main.css">
 
@@ -53,51 +53,77 @@
           <img src="assets/img/logo.png" alt="Logotipo" />
         </a>
 
-        <!-- Menu's start -->
-        <nav>
+
+        <nav id="navbar" class="navbar">
+          <!-- Menu's start -->
           <ul>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#Sobre">Sobre</a></li>
-            <li><a href="#Serviços">Serviços</a></li>
-            <li><a href="#Departamentos">Departamentos</a></li>
-            <li><a href="#Médicos">Médicos</a></li>
+            <li><a href="#Hero" class="active">Home</a></li>
+            <li><a href="#Sobre">Sobre Nós</a></li>
+            <li><a href="#Servicos">Serviços</a></li>
+            <li><a href="#Departamentos">Blog</a></li>
             <li><a href="#Contato">Contato</a></li>
-            <li><a href="#" class="dropdown">Mais opções</a>
+            <li class="dropdown"><a href="#"><span>Mais opções</span> <i
+                  class="bi bi-chevron-down toggle-dropdown"></i></a>
 
               <!-- Dropdown Menu -->
               <ul>
-                <li>Opção 1</li>
-                <li>Opção 2</li>
-                <li>Opção 3</li>
-                <li>Opção 4</li>
-                <li> Submenu
+                <li><a href="#">Dúvidas Frequentes</a></li>
+                <li class="dropdown"><a href="#"><span>Produtos utilizados</span> <i
+                      class="bi bi-chevron-down toggle-dropdown"></i></a>
                   <ul> <!-- Second Dropdown Menu -->
-                    <li>Submenu 1</li>
-                    <li>Submenu 2</li>
-                    <li>Submenu 3</li>
-                    <li> Submenu 4</li>
-                    <li>Submenu 5</li>
-                  </ul>
+                    <li><a href="#">Xampus</a></li>
+                    <li><a href="#">Condicionadores</a></li>
+                    <li><a href="#">Perfumes</a></li>
+                    <li><a href="#">Hidratações</a></li>
+                    <li><a href="#">Tintas</a></li>
+                  </ul> <!-- Second Dropdown Menu's end -->
                 </li>
-              </ul>
+              </ul> <!-- Dropdown Menu's end -->
             </li>
-          </ul>
+          </ul> <!-- Menu's end -->
+
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+
         </nav>
 
-        <a href="#" class="cta-btn">
-          Agende uma consulta
-        </a>
+        <a href="#" class="cta-btn"> Agende uma avaliação </a>
 
       </div>
     </div> <!-- Branding's end -->
   </header> <!-- Header's end -->
 
 
-  <main>
-    <div>
-      <h1>Cantinho dos Pets</h1>
-    </div>
+  <main class="main">
+
+    <!-- HERO section -->
+    <section id="hero" class="hero section">
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <!-- Foto 1 / Slide 1 -->
+        <div class="carousel-item active">
+          <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="Médico operando paciente">
+
+          <div class="container">
+            <h2>Cantinho dos Pets!</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, repudiandae veniam? Eum inventore architecto magni! Magni nam enim aperiam dolore, facere praesentium ratione nostrum deleniti recusandae quis, illum corporis? Consectetur?
+            </p>
+          </div>
+        </div>
+
+        <!-- Foto 2 / Slide 2 -->
+        <!-- <div class="carousel-item active">
+          <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="Médico operando paciente">
+        </div> -->
+
+        <!-- Foto 3 / Slide 3 -->
+        <!-- <div class="carousel-item active">
+          <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="Médico operando paciente">
+        </div> -->
+      </div>
+    </section> 
+
+
   </main>
 
   <footer>
