@@ -19,6 +19,11 @@ body{
     color: var(--default-text-color);
 }
 
+a{
+  text-decoration: none;
+  transition: 0.3s;
+}
+
 .header{
     background-color: var(--purple-background);
     box-shadow: 0 5px 20px rgb(167, 167, 167);
@@ -51,11 +56,11 @@ a{
 
 
 @media (min-width: 1200px){
-    .navbar{
+    .navmenu{
         padding: 0;
     }
 
-    .navbar ul{
+    .navmenu ul{
         list-style: none;
         margin: 0;
         padding: 0;
@@ -63,11 +68,11 @@ a{
         align-items: center;
     }
 
-    .navbar li{
+    .navmenu li{
         position: relative;
     }
 
-    .navbar a {
+    .navmenu a {
         color: var(--yellow-background);
         padding: 18px 15px;
         font-size: 13px;
@@ -80,26 +85,26 @@ a{
         white-space: nowrap;
     }
 
-    /* .navbar a i{
+    /* .navmenu a i{
         font-size: 12px;
         line-height: 0;
         margin-left: 5px;
     } */
 
-    .navbar a:hover,
-    .navbar .active,
-    .navbar .active:focus{
+    .navmenu li:hover>a,
+    .navmenu .active,
+    .navmenu .active:focus{
         color: var(--hover-text-1);
     }
 
-    .navbar .dropdown ul{
+    .navmenu .dropdown ul{
         margin: 0;
         padding: 10px 0;
         background: var(--background-color);
         display: block;
         position: absolute;
         left: 14px;
-        top: 100%;
+        top: 130%;
         opacity: 0; 
         visibility: hidden;
         border-radius: 4px;
@@ -107,11 +112,11 @@ a{
         z-index: 99;
     }
 
-    .navbar .dropdown ul li {
+    .navmenu .dropdown ul li {
         min-width: 200px;
     }
 
-    .navbar .dropdown ul a {
+    .navmenu .dropdown ul a {
         padding: 10px 20px;
         font-size: 15px;
         text-transform: none;
@@ -121,17 +126,17 @@ a{
         text-transform: capitalize;
     }
 
-    .navbar .dropdown ul a i{
+    .navmenu .dropdown ul a i{
         font-size: 12px;
     }
 
-    .navbar .dropdown ul a:hover,
-    .navbar .dropdown ul active:hover,
-    .navbar .dropdown ul li:hover>a{
+    .navmenu .dropdown ul a:hover,
+    .navmenu .dropdown ul active:hover,
+    .navmenu .dropdown ul li:hover>a{
         color: #b72cc7;
     }
 
-    .navbar .dropdown:hover>ul{
+    .navmenu .dropdown:hover>ul{
         opacity: 1;
         top: 100%;
         visibility: visible;
@@ -298,6 +303,32 @@ a{
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
+ }
+
+ .hero .container{
+  background: color-mix(in srgb, var(--hover-text-1), transparent 10%);
+  color: var(--white-background-color);
+  position: relative;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 4px solid red;
+  z-index: 3;
+  margin-bottom: 50px;
+ }
+
+ @media (max-width: 1200px){
+  .hero .container{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .hero h2{
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--white-background-color);
+  }
  }
 
  @media (max-height: 500px), (max-width: 500px){
