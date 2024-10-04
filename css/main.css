@@ -1,3 +1,4 @@
+
 :root {
   --background-color: #ebebeb;
   --nav-fundo: #dbdbdb;
@@ -54,14 +55,15 @@ a {
 }
 
 .header .cta-btn,
-.header .cta-btn:focus{
-  color: var(--nav-color);
-  background: var(--nav-bg-topbar);
+.header .cta-btn:focus {
+  color: #363636;
+  background: #3fbbc0;
   font-size: 14px;
   padding: 8px 20px;
   margin: 0 5px 0 30px;
   border-radius: 4px;
 }
+
 
 
 /* Nav menu Desktop = Responsivo */
@@ -322,10 +324,10 @@ margin-bottom: 50px;
 }
 
 @media (max-width: 1200px) {
-.hero .container {
-  margin-left: 50px;
-  margin-right: 50px;
-}
+  .hero .container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 }
 
 .hero h2 {
@@ -335,31 +337,31 @@ font-weight: 700;
 /* color: ; OPCIONAL */
 }
 
-.hero .carousel-control-prev{
+.hero .carousel-control-prev {
   justify-content: start;
 }
 
-.hero .carousel-control-prev{
+.hero .carousel-control-next {
   justify-content: end;
 }
 
-.hero .carousel-control-prev-icon,
-.hero .carousel-control-next-icon{
-  background: var(--nav-bg-topbar);
+.hero .carousel-control-next-icon,
+.hero .carousel-control-prev-icon {
+  background: #3fbbc0;
   font-size: 26px;
   color: red;
   border-radius: 50px;
-  transition: 0.3s;
+  transition: .3s;
   width: 54px;
   height: 54px;
   display: flex;
-  justify-content: center;
   align-items: center;
-}
+  justify-content: center;
+} 
 
-.hero .carousel-indicators{
+.hero .carousel-indicators {
   cursor: pointer;
-  background: var(--texto-default);
+  background: #444;
   width: 12px;
   height: 12px;
   opacity: 1;
@@ -369,10 +371,42 @@ font-weight: 700;
   transition: 0.3s;
 }
 
-.hero .carousel-indicators.active{
+.hero .carousel-indicators.active  {
   opacity: 1;
   background: red;
 }
+
+.accent-background{
+  color: var(--nav-dropdown-hover-color);
+}
+
+/*----------------------------------------
+# Featured Services Section
+------------------------------------------*/ 
+
+.featured-services .service-item{
+  background: var(--background-color);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  padding: 50px 30px;
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.featured-services .service-item .icon{
+  margin-bottom: 10px;
+}
+
+.featured-services .service-item .icon i{
+  color: var(--nav-bg-topbar);
+  font-size: 36px;
+  transition: ease-in-out 0.3s;
+}
+
+
+
+
 
 
 @media (max-height:500px), 
@@ -381,3 +415,4 @@ font-weight: 700;
       min-height: 100vh;
   }
 }
+
