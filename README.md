@@ -1,1 +1,1 @@
-Durante o curso complementar, oferecido pelo SENAI Mariano Ferraz, Interfaces Web com Bootstrap, o projeto Medicio é um website responsivo 
+Durante o curso complementa Interfaces Web com Bootstrap, oferecido pelo SENAI Mariano Ferraz, o projeto Medicio foi construído em aula com o auxilio do professor Gustavo Ferianni, sendo um website responsivo feito inteiramente com a manipulação do Bootstrap na versão mais recente 5.3.
